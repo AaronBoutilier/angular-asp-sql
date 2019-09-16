@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+  angular:
+    image: aaronboutilier/tea-collection-angular:1.0.0
+    ports:
+    - "4200:80"
+    depends_on:
+      - "api"
+
+  api:
+    image: aaronboutilier/tea-collection-api:1.0.0
+    ports:
+    - "44365:80"
+    depends_on:
+      - "database"
+
+  database:
+    image: aaronboutilier/tea-collection-db:1.0.0
+    ports:
+    - "1433:1433"

@@ -1,0 +1,7 @@
+<ng-container *ngIf="tea">
+    <h3>{{ tea.name }}</h3>
+    <label>Ingredients</label>
+    <ul>
+      <li *ngFor="let ingredient of tea.ingredients">{{ ingredient.name }}</li>
+    </ul>
+</ng-container>
