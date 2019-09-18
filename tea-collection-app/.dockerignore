@@ -1,3 +1,4 @@
 *
-!dist/tea-collection-app*
-!nginx/
+node_modules
+!dist
+!nginx
